@@ -1,0 +1,14 @@
+body{
+	background-image:url("louvre.jpg");
+	background-repeat : no-repeat;
+	background-attachment : scroll;
+	background-size : cover;
+	}
+	
+.display-3{
+	color : white;
+	}
+	
+IMG{
+	opacity : 0.75;
+	}
