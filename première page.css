@@ -12,3 +12,183 @@ body{
 IMG{
 	opacity : 0.75;
 	}
+
+
+.carousel-inner{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon{
+    left:10%;
+	z-index:20;
+}
+
+.carousel-control-next-icon{
+    right: 10%;
+	z-index:20;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+}
+
+.d-block {
+    height: 400px;
+    width: auto;
+}
+.carousel-item {
+    text-align: center;
+
+}
+.carousel-item span {
+    position: absolute;
+    bottom: 10px;
+    display: none;
+    transform: translate(-50%, 0);
+    color: white;
+    text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+
+.carousel-item:hover span {
+    display: inline;
+}
+
+.map {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    background-image: url(plan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: block; 
+	margin: 0 auto; 
+
+}
+ 
+.map div {
+    border-radius: 50%;
+    width: 12px;
+    display: none;
+    height: 12px;
+    border: 2px solid red;
+    /*background-color: red;*/
+    position: absolute;
+}
+
+#first-position {
+    top: 40px;
+    left: 350px;
+}
+
+#second-position {
+    top: 330px;
+    left: 20px;
+}
+
+#third-position {
+    top: 330px;
+    left: 20px;
+}
+
+#fourth-position {
+    top: 330px;
+    left: 20px;
+}
+
+#fifth-position {
+    top: 330px;
+    left: 20px;
+}
+
+#sixth-position {
+    top: 330px;
+    left: 20px;
+}
+
+#seventh-position {
+    top: 330px;
+    left: 20px;
+}
+
+#eight-position {
+    top: 330px;
+    left: 20px;
+}
+
+#ninth-position {
+    top: 330px;
+    left: 20px;
+}
+
+#tenth-position {
+    top: 330px;
+    left: 20px;
+}
+
+.coverflow {
+    transition: all 350ms ease-in-out;
+    transition-timing-function: cubic-bezier(.56, .12, .12, .98);
+    display: block;
+    white-space: nowrap;
+    word-spacing: -0.25em;
+    transform-origin: 50% 50%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.coverflow-content {
+    transform-origin: 100% 50%;
+}
+
+.coverflow-container {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+}
+
+.coverflow-item {
+    display: inline-block;
+    white-space: normal;
+    word-spacing: normal;
+    vertical-align: bottom;
+    margin-right: -180px;
+    perspective: 800px;
+    position: relative;
+
+}
+.coverflow img {
+	height: 300px;
+	width: 300px;
+	object-fit: contain;
+}
+
+.arrow-up {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #993333;
+    top: -12px;
+}
+
+.image-information {
+    border-radius: 3px; /*pour les bords ronds*/
+    width: 300px;
+    height: 300px;
+    display: none;
+    background-color: blue;
+    color: white;
+    position: absolute; 
+}
