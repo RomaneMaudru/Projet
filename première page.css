@@ -1,3 +1,8 @@
+* {
+	font-weight : normal;
+	font-style : normal;
+}
+
 body{
 	background-image : url("louvre.jpg");
 	background-repeat : no-repeat;
@@ -217,3 +222,23 @@ IMG{
 #site {
 	color : white;
 }
+
+LI {
+	font-weight : bold;
+	font-style : italic;
+}
+
+P {
+	font-weight : normal;
+	font-style : normal;
+}
+
+.panel, .flip {
+		padding: 5px;
+		border-radius: 7px;
+		}
+		
+.panel {
+		padding: 50px;
+		display: none;
+		}
