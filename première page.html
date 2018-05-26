@@ -14,8 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css" />
 		<script type="text/javascript" src="./louvre.js"></script>
 	</HEAD>
-	
-	
+
+
 	<BODY>
 		<H1 class="display-3" align="center" id="o"> Immersion dans une des galeries du Louvre </H1>
 		<HR WIDTH="300" align="center" color="white"> </HR>
@@ -198,7 +198,15 @@
 		<H1 class="display-3" id="x"> Parcours initiatiques </H1>
 		<div class="container">
 		<div class="jumbotron">	
-		
+			<UL type="circle">
+				<div class="flip"> <LI> "My first Louvre" : Parcours dédié aux familles avec enfants en bas âge </LI> </div>
+				<div class="panel"> <IMG SRC="plan extérieur.jpg" ALT="Carte 1" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
+				<div class="flip"> <LI> "Les antiquités égyptiennes" : Parcours destiné aux personnes âgées </LI> </div>
+				<div class="panel"> <IMG SRC="plan extérieur.jpg" ALT="Carte 2" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
+				<div class="flip"> <LI> "Circuit chefs-d'oeuvre" : Parcours approprié aux groupes scolaires </LI> </div>
+				<div class="panel">	<IMG SRC="carte3.jpg" ALT="Carte 3" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
+			</UL>
+			<BR> Tous les parcours proposés durent environ 2h. </BR>
 		</div>
 		</div>
 		
@@ -258,14 +266,14 @@
 			<H2 class="display-5"> Accès </H2>
 				<IMG SRC="plan extérieur.jpg" ALT="Plan du site" WIDTH="1000px" HEIGHT="600px"  ALIGN="center">
 				<UL type="circle">
-				<LI><em> En métro : </em> </LI> lignes 1 et 7, arrêt "Palais-Royal/Musée du Louvre"
+				<LI> En métro : </LI> lignes 1 et 7, arrêt "Palais-Royal/Musée du Louvre"
 					<BR> ligne 14, arrêt "Pyramides" </BR>
-					<LI><em> En bus : </em></LI> n°21, 24, 27, 39, 48, 68, 69, 72, 81, 95
-					<LI><em> En vélib' : </em></LI> n°1015, 2 place André Malraux
+					<LI> En bus : </LI> n°21, 24, 27, 39, 48, 68, 69, 72, 81, 95
+					<LI> En vélib' : </LI> n°1015, 2 place André Malraux
 						<BR> n°1023, 165 rue Saint-Honoré </BR>
 						n°1014 : 5 rue de l’Echelle
 						<BR> n°1013 : 186 rue Saint-Honoré </BR>
-					<LI><em> En voiture : </em></LI> espace "Louvre", quai François Mitterand ou parc de stationnement souterrain accessible par l'avenue du Général-Lemonnier, tous les jours de 7h00 à 23h00
+					<LI> En voiture : </LI> espace "Louvre", quai François Mitterand ou parc de stationnement souterrain accessible par l'avenue du Général-Lemonnier, tous les jours de 7h00 à 23h00
 				</UL>
 				<div class="row">
 					<div class="col"> <IMG SRC="accès Louvre.jpg" ALIGN="left" WIDTH="500px" HEIGHT="300px" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width='+this.width+', height='+this.height);"> </div>
@@ -275,7 +283,7 @@
 		</div>
 		
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
-			<a class="navbar-brand" href="#"> <IMG SRC="logo.png" HEIGHT="50px"> </a>
+			<a class="navbar-brand" href="#"> <IMG SRC="logo.png" HEIGHT="40px"> </a>
 			<ul class="nav navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="#o"> Retour en haut de page </a>
@@ -300,6 +308,15 @@
 	
 	<script>
 		changeCoverflow(0)
+		
+		$(document).ready(function(){
+			$(".flip").mouseenter(function(){
+				alert("Cliquez pour voir/cacher le plan");
+			});
+			$(".flip").click(function(){
+				$(".panel").slideToggle();
+			});
+		});
 	</script>
 	
 </HTML>
