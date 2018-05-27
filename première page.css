@@ -190,6 +190,7 @@ IMG{
     border-radius: 7px; /*pour les bords ronds*/
     width: 300px;
     height: 300px;
+	left: 500px;
     display: none;
     background-color: #151515;
 	opacity : 0.7;
