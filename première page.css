@@ -187,7 +187,7 @@ IMG{
 }
 
 .image-information {
-    border-radius: 7px; /*pour les bords ronds*/
+    border-radius: 7px;
     width: 300px;
     height: 300px;
 	left: 500px;
