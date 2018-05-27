@@ -27,16 +27,13 @@
 			<nav class="navbar navbar-expand-sm bg-light navbar-light">
 				<ul class="nav navbar-nav" style="width:100%">
 					<li class="nav-item">
-						<a class="nav-link" href="#a"> Visite guidée </a>
+						<a class="nav-link" href="#a"> Visite à 360° </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#b"> Artistes de la galerie </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#x"> Parcours </a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#y"> News </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#z"> Infos utiles </a>
@@ -51,10 +48,11 @@
 		</div>
 		
 		
-		<H1 class="display-3" id="a"> Visite guidée </H1>
+		<H1 class="display-3" id="a"> Visite à 360° </H1>
 		<div class="container">
 		<div class="jumbotron">	
-		
+			<iframe src="https://www.360images.fr/360/paris/louvre.html" width="1050" height="750" allowfullscreen>
+			</iframe>
 		</div>
 		</div>
 		
@@ -188,7 +186,6 @@
 
 					<h6><strong> Artiste </strong></h6>
 					Théodore Géricault est un peintre sculpteur, dessinateur et lithographe français. Il est l'incarnation de l'artiste romantique.
-			</div>
 				</div>
 			</div>
 			<div class="image-information" id="information-6">
@@ -197,7 +194,7 @@
 					Tableau commandé par le bénéction Paul du monastère San Giogo Maggiore, situé à Venise. Le contrat stipule que Véronèse pourra peindre autant de figures qu'il sera possible, que le tableau doit être de même largeur et de même hauteur que le mur de face. 
 
 					<H6><strong> Artiste </strong></H6>
-				Paul Véronèse est un peintre vénitien. Il est connu comme un grand coloriste ainsi que pour ses décorations illusionnistes en fresque et à l'huile.
+					Paul Véronèse est un peintre vénitien. Il est connu comme un grand coloriste ainsi que pour ses décorations illusionnistes en fresque et à l'huile.
 				</div>
 			</div>
 			<div class="image-information" id="information-7">
@@ -247,16 +244,9 @@
 				<div class="flip"> <LI> "Les antiquités égyptiennes" : Parcours destiné aux personnes âgées </LI> </div>
 				<div class="panel"> <IMG SRC="plan extérieur.jpg" ALT="Carte 2" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
 				<div class="flip"> <LI> "Circuit chefs-d'oeuvre" : Parcours approprié aux groupes scolaires </LI> </div>
-				<div class="panel">	<IMG SRC="carte3.jpg" ALT="Carte 3" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
+				<div class="panel"> <IMG SRC="carte3.jpg" ALT="Carte 3" WIDTH="1000px" HEIGHT="600px"  ALIGN="center"> </div>
 			</UL>
 			<BR> Tous les parcours proposés durent environ 2h. </BR>
-		</div>
-		</div>
-		
-		<H1 class="display-3" id="y"> Les news du musée </H1>
-		<div class="container">
-		<div class="jumbotron">	
-		
 		</div>
 		</div>
 
@@ -329,7 +319,7 @@
 			<a class="navbar-brand" href="#"> <IMG SRC="logo.png" HEIGHT="40px"> </a>
 			<ul class="nav navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="#o"> Retour en haut de page </a>
+					<a class="nav-link" href="javascript:void(0)" onclick="window.open(this.href, 'exemple', 'height=200, width=400, top=100, left=100, toolbar=no, menubar=yes, location=no, resizable=yes, scrollbars=no, status=no'); return false;"> <center> Nous contacter </center> </a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="javascript:void(0)"> Nous contacter </a>
@@ -360,6 +350,14 @@
 				$(".panel").slideToggle();
 			});
 		});
+		
+		$(".flip2").mouseenter(function(){
+			alert("Cliquez pour agrandir");
+		});
+		
+		function f(){
+			alert("Veuillez remplir le formulaire");
+		};
 	</script>
 	
 </HTML>
