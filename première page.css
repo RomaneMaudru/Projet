@@ -79,7 +79,6 @@ IMG{
     display: none;
     height: 12px;
     border: 2px solid red;
-    /*background-color: red;*/
     position: absolute;
 }
 
@@ -125,7 +124,7 @@ IMG{
 
 #ninth-position {
     top: 187px;
-    left: 752px;
+    left: 725px;
 }
 
 #tenth-position {
@@ -187,13 +186,13 @@ IMG{
 }
 
 .image-information {
-    border-radius: 7px;
+    border-radius: 7px; /*pour les bords ronds*/
     width: 300px;
-    height: 300px;
-	left: 500px;
+    height: 325px;
+	left : 500px;
     display: none;
     background-color: #151515;
-	opacity : 0.7;
+	opacity : 0.8;
     color: white;
     position: absolute ;
 }
@@ -235,11 +234,19 @@ P {
 }
 
 .panel, .flip {
-		padding: 5px;
-		border-radius: 7px;
-		}
+	padding: 5px;
+	border-radius: 7px;
+	}
 		
 .panel {
-		padding: 50px;
-		display: none;
-		}
+	padding: 50px;
+	display: none;
+	}
+	
+#first-item, #second-item, #third-item, #fourth-item, #fifth-item, #sixth-item, #seventh-item, #eight-item, #ninth-item, #tenth-item{
+	text-align : center;
+}
+
+#information-1, #information-2, #information-3, #information-4, #information-5, #information-6, #information-7, #information-8, #information-9, #information-10 {
+	text-align : center;
+}
