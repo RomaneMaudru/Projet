@@ -1,0 +1,47 @@
+<HTML>
+	<HEAD>
+		<META charset="utf-8"/>
+		<TITLE> Formulaire </TITLE>
+	</HEAD>
+
+	<BODY>
+		<H1> Restons connectés </H1>
+		<form method="post" action="formulaire.php">
+			<BR> Votre courriel : </BR>
+				<input type=text size=15 required>
+			<BR> Civilité : </BR>
+				<input id = "civilite" name="civilite" value="00011c0000000393" type="radio" onclick=""/ required>
+						Mme&nbsp;&nbsp;&nbsp; 
+				<input id = "civilite" name="civilite" value="00011c0000000399" type="radio" onclick=""/ required> 
+                		Mr&nbsp;&nbsp;&nbsp; 
+			<BR> Nom : </BR>
+				<input type=text size=15 required>
+			<BR> Prénom : </BR>
+				<input type=text size=15 required>
+			<BR>
+				<label for="pays">Dans quel pays habitez-vous ?</label><br />
+				<select name="pays" id="pays">
+					<optgroup label="Europe">
+				<option value="france">France</option>
+				<option value="espagne">Espagne</option>
+				<option value="italie">Italie</option>
+				<option value="royaume-uni">Royaume-Uni</option>
+					</optgroup>
+					<optgroup label="Amérique">
+				<option value="canada">Canada</option>
+				<option value="etats-unis">Etats-Unis</option>
+					</optgroup>
+					<optgroup label="Asie">
+				<option value="chine">Chine</option>
+				<option value="japon">Japon</option>
+					</optgroup>
+				</select>
+			</BR>
+			<BR> <label for="ameliorer"> Questions, recommandations, remarques... </label> </br>
+				<textarea name="ameliorer" id="ameliorer"></textarea>
+			</BR>
+		<P> <input type="submit" value="Envoyer" /> </P>
+		</form>
+
+	</BODY>
+</HTML>
