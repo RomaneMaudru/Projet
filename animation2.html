@@ -1,0 +1,96 @@
+<HTML>
+	<HEAD> 
+	    <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var a=[585,135];
+				var b=[340,135];	
+				var c=[340,75];
+				var d=[540,85];
+				var f=[540,140];
+				var g=[865,140];
+				var h=[735,275];
+				var j=[540,260];
+				var k=[540,315];
+				var l=[160,320];
+
+				
+				var objet=
+				{
+					'div': document.getElementById('moveDiv3'),
+					
+					'position': a,
+					
+					'move': function()
+					{
+						this.div.style.left=this.position[0]+'px';
+						this.div.style.top=this.position[1]+'px';
+					}
+				}
+				
+				var navigatorsProperties=['transitionend','OTransitionEnd','webkitTransitionEnd'];				
+				for(var i in navigatorsProperties)
+				{
+					objet.div.addEventListener(navigatorsProperties[i],function(e)
+					{
+						switch(objet.position)
+						{
+							case a:
+								objet.position=b;
+							break;
+							
+							case b:
+								objet.position=c;
+							break;
+							
+							case c:
+								objet.position=d;
+							break;
+							
+							case d:
+								objet.position=f;
+							break;
+							
+							case f:
+								objet.position=g;
+							break;
+							
+							case g:
+								objet.position=h;
+							break;
+							
+							case h:
+								objet.position=j;
+							break;
+							
+							case j:
+								objet.position=k;
+							break;
+							
+							case k:
+								objet.position=l;
+							break;
+							
+							case l:
+								objet.position=none;
+							break;
+							
+						}
+						
+						objet.move();
+					},false);
+				}
+				
+				objet.move();
+			};
+		</script>				
+	</HEAD>
+	
+	<BODY>
+		<IMG SRC="premierétage.png" HEIGHT="400px" WIDTH="800px">
+		<div id="moveDiv3"> </div>
+	</BODY>
+	
+</HTML>

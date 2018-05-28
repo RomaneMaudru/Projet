@@ -1,0 +1,268 @@
+* {
+	font-weight : normal;
+	font-style : normal;
+}
+
+body{
+	background-image : url("louvre.jpg");
+	background-repeat : no-repeat;
+	background-attachment : fixed;
+	background-size : cover;
+	}
+	
+.display-3{
+	color : white;
+	}
+	
+IMG{
+	opacity : 0.75;
+	}
+	
+.carousel-inner{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon{
+    left:10%;
+	z-index:20;
+}
+
+.carousel-control-next-icon{
+    right: 10%;
+	z-index:20;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+}
+
+.d-block {
+    height: 400px;
+    width: auto;
+}
+.carousel-item {
+    text-align: center;
+
+}
+.carousel-item span {
+    position: absolute;
+    bottom: 10px;
+    display: none;
+    transform: translate(-50%, 0);
+    color: white;
+    text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+
+.carousel-item:hover span {
+    display: inline;
+}
+
+.map {
+    position: relative;
+    height: 241px;
+    width: 1000px;
+    background-image: url(Plan1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	display: block; 
+	margin: 0 auto; 
+}
+
+.map div {
+     border-radius: 50%;
+     width: 12px;
+     display: none;
+     height: 12px;
+     border: 2px solid red;
+     /*background-color: red;*/
+     position: absolute;
+ }
+
+#first-position {
+    top: 180px;
+    left: 335px;
+}
+
+#second-position {
+    top: 218px;
+    left: 280px;
+}
+
+#third-position {
+    top: 78px;
+    left: 900px;
+}
+
+#fourth-position {
+    top: 170px;
+    left: 720px;
+}
+
+#fifth-position {
+    top: 170px;
+    left: 740px;
+}
+
+#sixth-position {
+    top: 210px;
+    left: 730px;
+}
+
+#seventh-position {
+    top: 190px;
+    left: 295px;
+}
+
+#eight-position {
+    top: 170px;
+    left: 730px;
+}
+
+#ninth-position {
+    top: 187px;
+    left: 725px;
+}
+
+#tenth-position {
+    top: 150px;
+    left: 300px;
+}
+
+.coverflow {
+    transition: all 350ms ease-in-out;
+    transition-timing-function: cubic-bezier(.56, .12, .12, .98);
+    display: block;
+    white-space: nowrap;
+    word-spacing: -0.25em;
+    transform-origin: 50% 50%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.coverflow-content {
+    transform-origin: 100% 50%;
+}
+
+.coverflow-container {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+}
+
+.coverflow-item {
+    display: inline-block;
+    white-space: normal;
+    word-spacing: normal;
+    vertical-align: bottom;
+    margin-right: -180px;
+    perspective: 800px;
+    position: relative;
+}
+
+.coverflow img {
+	height: 300px;
+	width: 300px;
+	object-fit: contain;
+}
+
+.arrow-up {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #151515;
+    top: -12px;
+}
+
+.image-information {
+    border-radius: 7px; /*pour les bords ronds*/
+    width: 300px;
+    height: 325px;
+	left : 500px;
+    display: none;
+    background-color: #151515;
+	opacity : 0.8;
+    color: white;
+    position: absolute ;
+}
+
+#searchbar {
+	width: 100%;	
+	text-align: right; 
+	}
+	
+#dropdownmenu {
+	position: absolute;
+	top: -100px;
+	font-size: 0.8em;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0; 
+	list-style: none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url("css/border-radius.htc");
+	background-color: #151515 ;
+	opacity : 0.7 ;
+}
+
+#site {
+	color : white;
+}
+
+LI {
+	font-weight : bold;
+	font-style : italic;
+}
+
+P {
+	font-weight : normal;
+	font-style : normal;
+}
+
+.panel, .flip {
+	padding: 5px;
+	border-radius: 7px;
+	}
+		
+.panel {
+	padding: 50px;
+	display: none;
+	}
+	
+#first-item, #second-item, #third-item, #fourth-item, #fifth-item, #sixth-item, #seventh-item, #eight-item, #ninth-item, #tenth-item{
+	text-align : center;
+}
+
+#information-1, #information-2, #information-3, #information-4, #information-5, #information-6, #information-7, #information-8, #information-9, #information-10 {
+	text-align : center;
+}
+
+.IMG
+{
+    transition-property: width, height;
+    transition-duration: 3s;
+
+    width: 535px;
+    height: 300px;
+}
+
+.IMG:hover 
+{
+   width: 900px;
+   height: 500px;
+}

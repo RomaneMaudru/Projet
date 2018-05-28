@@ -1,0 +1,35 @@
+#moveDiv
+{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 205px;
+	left: 425px;
+	background-color: #151515;
+	opacity : 0.7;
+	transition: left 3s ease-in-out, top 2s ease-in-out;
+}
+
+#moveDiv2
+{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 295px;
+	left: 115px;
+	background-color: #151515;
+	opacity : 0.7;
+	transition: left 3s ease-in-out, top 2s ease-in-out;
+}
+
+#moveDiv3
+{
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	top: 205px;
+	left: 585px;
+	background-color: #151515;
+	opacity : 0.7;
+	transition: left 3s ease, top 2s ease;
+}
